@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>College Admission Portal</title>
+  <!-- Link to CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h2>College Admission Form</h2>
+
+  <div class="form-container">
+    <form id="admissionForm">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" required pattern="[0-9]{10}">
+
+      <label for="course">Select Course</label>
+      <select id="course" required>
+        <option value="">--Select--</option>
+        <option>B.Tech</option>
+        <option>B.Sc</option>
+        <option>B.Com</option>
+        <option>BA</option>
+      </select>
+
+      <label for="dob">Date of Birth</label>
+      <input type="date" id="dob" required>
+
+      <button type="submit">Submit Application</button>
+    </form>
+  </div>
+
+  <div class="form-container">
+    <h3>Submitted Applications</h3>
+    <table id="dataTable">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Phone</th>
+          <th>Course</th>
+          <th>DOB</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- New rows will be added here -->
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Link to JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
